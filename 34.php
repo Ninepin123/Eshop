@@ -12,6 +12,7 @@ if (mysql_num_rows($result) == 1) {
     echo '<form method="get" action="35.php"> 
           <center><table border=0 width=40%>';
     while ($row = mysql_fetch_array($result)) {
+?>
         <tr bgcolor=pink>
         <td align="right" width=25%>會員ID: </td>
         <td align="left"><input type=textmaxLength="10" size="10" name="usrid" value=<?echo $row[0]?>>(中、英文皆可)</td>
@@ -34,6 +35,7 @@ if (mysql_num_rows($result) == 1) {
         }
         ?></td>
         <input value = "M" type="radio" name="sex" <?echo $chk?>男>
+<?
     }
 }
 else{

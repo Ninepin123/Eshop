@@ -36,12 +36,12 @@
     <td align="right" width=25%>生日:</td>
     <td align="left"><?echo $row[4]?></td>
 
-    <tr>
+    <tr bgcolor=yellow>
     <td align="right" width=25%>興趣:</td>
     <td align="left"><?echo $row[5]?></td>
     
 
-    <tr>
+    <tr bgcolor=pink>
     <td align="right" width=25%>星座:</td>
     <td align="left"><?php
     if ($row[6] == 5) {
@@ -81,6 +81,7 @@
         echo '雙魚座';
     }
      ?></td>
+    <tr bgcolor=yellow>
     <td align="right" width=25%>職業:</td>
     <td align="left"><?php
     if ($row[7] == 17) {
@@ -99,6 +100,7 @@
         echo '服務';
     }
     ?></td>
+    <tr bgcolor=pink>
     <td align="right" width=25%>電話:</td>
     <td align="left"><?echo $row[8]?></td>
     <?php
