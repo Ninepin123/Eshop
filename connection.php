@@ -6,11 +6,11 @@
         $link = mysql_connect($location,$account,$password);
         if(!$link)
         {
-            echo "無法連接資料庫";
+            echo "無法連接SQL";
             exit();
         }
         else{
-            echo "成功連接資料庫";
+            echo "成功連接SQL";
         }
     }
 ?>
